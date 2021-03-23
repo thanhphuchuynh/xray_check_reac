@@ -1,9 +1,11 @@
 # Getting Started with Create React App
 # xray_check_reac https://xrayphuc.ga/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<code>
 <video controls>
   <source src="video.mp4" type="video/mp4">
 </video>
+</code>
 ## Available Scripts
 
 In the project directory, you can run:
