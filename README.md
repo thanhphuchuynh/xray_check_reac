@@ -1,5 +1,6 @@
 # Getting Started with Create React App
 # xray_check_reac https://xrayphuc.ga/
+[![](http://img.youtube.com/vi/4dJmM9mvVbk/0.jpg)](http://www.youtube.com/watch?v=4dJmM9mvVbk "CHEST X-RAY ABNORMALITIES DETECTION")
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 <code>
 <video src="video.mp4" width="320" height="200" controls preload></video>
