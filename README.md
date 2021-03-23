@@ -1,13 +1,15 @@
 # Getting Started with Create React App
 # xray_check_reac https://xrayphuc.ga/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+<video controls>
+  <source src="video.mp4" type="video/mp4">
+</video>
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `yarn start`
-
+![](video.mp4)
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
