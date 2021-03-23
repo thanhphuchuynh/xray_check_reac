@@ -2,10 +2,13 @@
 # xray_check_reac https://xrayphuc.ga/
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 <code>
-<video width="320" height="200" controls>
+<video src="video.mp4" width="320" height="200" controls preload></video>
+<!-- <video width="320" height="200" controls>
   <source src="video.mp4" type="video/mp4">
-</video>
+</video> -->
 </code>
+<video src="video.mp4" width="320" height="200" controls preload></video>
+
 ## Available Scripts
 
 In the project directory, you can run:
