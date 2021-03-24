@@ -28,9 +28,6 @@ export default function NestedList({ list }) {
   const classes = useStyles();
   // const [open, setOpen] = React.useState(true);
   console.log(list);
-  // const handleClick = () => {
-  //   setOpen(!open);
-  // };
 
   return (
     <List
@@ -58,28 +55,8 @@ export default function NestedList({ list }) {
               <span>{value.conf}</span>
             </span>
           </ListItemText>
-          {/* <ListItemText primary={value.conf} /> */}
         </ListItem>
       ))}
-      {/* <ListItem button>
-        <ListItemIcon>
-          <SendIcon />
-        </ListItemIcon>
-        <ListItemText primary="Sent mail" />
-      </ListItem>
-      <ListItem button>
-        <ListItemIcon>
-          <DraftsIcon />
-        </ListItemIcon>
-        <ListItemText primary="Drafts" />
-      </ListItem>
-      <ListItem button onClick={handleClick}>
-        <ListItemIcon>
-          <InboxIcon />
-        </ListItemIcon>
-        <ListItemText primary="Inbox" />
-        {open ? <ExpandLess /> : <ExpandMore />}
-      </ListItem> */}
     </List>
   );
 }

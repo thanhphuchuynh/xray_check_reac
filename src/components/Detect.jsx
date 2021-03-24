@@ -18,6 +18,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import NestedList from './NestedList';
+import ChartComponent from './Chart';
 const CircularProgressWithLabel = props => {
   return (
     <Box
@@ -62,6 +63,8 @@ const Detect = ({ state, domain }) => {
   const [Image, setImage] = useState('');
   const [ResultServer, setResultServer] = useState('');
   const [isSent, setIsSent] = useState(false);
+  const [isChart, setIsChart] = useState(false);
+
   useEffect(() => {
     // If the menu is open and we click the menu button to close it.
     if (state.clicked === false) {
@@ -142,7 +145,19 @@ const Detect = ({ state, domain }) => {
                   <ul>
                     <li style={{ height: 'auto' }}>
                       <div ref={el => (line1 = el)}>
-                        <NestedList list={ResultServer} />
+                        {!isChart ? (
+                          <NestedList list={ResultServer} />
+                        ) : (
+                          <ChartComponent result={ResultServer} />
+                        )}
+                        <Button
+                          variant="contained"
+                          color="primary"
+                          component="span"
+                          onClick={() => setIsChart(!isChart)}
+                        >
+                          View {isChart ? 'Chart' : 'List'}
+                        </Button>
                       </div>
                     </li>
                   </ul>
