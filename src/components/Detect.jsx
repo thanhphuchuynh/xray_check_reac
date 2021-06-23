@@ -158,11 +158,25 @@ const Detect = ({ state, domain }) => {
                         >
                           View {isChart ? 'Chart' : 'List'}
                         </Button>
+                        <Button
+                          variant="contained"
+                          color="primary"
+                          component="span"
+                          onClick={() => {
+                            setResultServer('');
+                            setFile(null);
+                            setIsSent(false);
+                            setImage('');
+                          }}
+                        >
+                          Reset
+                        </Button>
                       </div>
                     </li>
                   </ul>
                 ) : (
                   <ul>
+                    <li></li>
                     <li>
                       <div
                         style={{
@@ -223,14 +237,40 @@ const Detect = ({ state, domain }) => {
                         ref={el => (line1 = el)}
                       >
                         {file ? (
-                          <Button
-                            variant="contained"
-                            color="primary"
-                            component="span"
-                            onClick={handleSentFiles}
+                          <div
+                            className="container_btn"
+                            style={{ display: 'flex' }}
                           >
-                            sent and detect
-                          </Button>
+                            <div>
+                              <Button
+                                variant="contained"
+                                color="primary"
+                                component="span"
+                                onClick={handleSentFiles}
+                              >
+                                sent and detect
+                              </Button>
+                            </div>
+                            <div>
+                              <input
+                                onChange={handleUpdateFiles}
+                                accept="image/*"
+                                style={{ display: 'none' }}
+                                id="contained-button-file"
+                                multiple
+                                type="file"
+                              />
+                              <label htmlFor="contained-button-file">
+                                <Button
+                                  variant="contained"
+                                  color="primary"
+                                  component="span"
+                                >
+                                  Upload
+                                </Button>
+                              </label>
+                            </div>
+                          </div>
                         ) : (
                           <div>
                             <input
